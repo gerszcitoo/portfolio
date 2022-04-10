@@ -211,6 +211,75 @@ td img {
 
 /* ---------------PORTFOLIO---------- */
 
+.main-portfolio h2 {
+    margin: 1rem;
+}
+
+.main-portfolio {
+    margin: 1rem;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.grid-element {
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.grid-element:hover .grid-btn {
+    opacity: 1;
+}
+
+.grid-btn {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease;
+    background: rgba(180, 180, 180, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-element>img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+}
+
+.element-title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 200;
+}
+
+.img1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.img2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.img3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.img4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
 
 /* ---------------CONTACTO------------ */
 
@@ -252,7 +321,7 @@ input[type=submit]:hover {
     background-color: #282828;
 }
 
-.contacto {
+.form-contacto {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -376,4 +445,13 @@ input[type=submit]:hover {
 
 .email span {
     background-color: #EB2222;
+}
+
+
+/* ---------------MEDIA QUERIES----------- */
+
+@media only screen and (max-width: 570px) {
+    .contactame {
+        flex-direction: column;
+    }
 }
