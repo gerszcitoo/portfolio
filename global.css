@@ -110,6 +110,29 @@ nav>ul>li {
 
 /* ---------------(INICIO) SOBRE MI-------------- */
 
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.more {
+    background: #333232;
+    width: 50vw;
+    padding: 10px 20vw;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.more:hover {
+    background: black;
+    color: white;
+}
+
 .about {
     margin: 1rem;
     display: grid;
@@ -151,6 +174,7 @@ hr {
     border: none;
     background-color: black;
     width: 50%;
+    margin-top: 2rem;
 }
 
 
@@ -206,6 +230,21 @@ td img {
 .main-about p {
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+
+/* -------IFRAME DE MAPS----- */
+
+.maps-iframe {
+    display: flex;
+    justify-content: center;
+    height: 450px;
+}
+
+.maps-iframe iframe {
+    position: absolute;
+    height: 50%;
+    width: 50%;
 }
 
 
