@@ -1,0 +1,379 @@
+/* ------------ESTILO GENERAL--------- */
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: overlay;
+}
+
+img {
+    pointer-events: none;
+}
+
+
+/* --------------SCROLL----------- */
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+ ::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+ ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* -------------NAVBAR------------- */
+
+nav {
+    font-size: 17px;
+    background-color: #111111;
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 0;
+    align-items: center;
+    width: fit-content;
+}
+
+nav>ul>li {
+    padding: 0.5rem;
+    margin: 10px 0;
+    transition: 0.1s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+}
+
+.nav-logo {
+    margin: 0;
+}
+
+.nav-item {
+    color: white;
+    display: inline-block;
+    position: relative;
+    transition: 0.1s all;
+    right: 0%;
+}
+
+.nav-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-item:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-item:active {
+    transform: scale(0.9);
+}
+
+
+/* ---------------(INICIO) SOBRE MI-------------- */
+
+.about {
+    margin: 1rem;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.about img {
+    grid-area: 1 / 1 / 3 / 2;
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
+    margin-left: 1rem;
+}
+
+.about h1 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.about p {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.about h1 {
+    margin: 1rem;
+}
+
+.about p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+hr {
+    margin: auto;
+    display: flex;
+    height: 2px;
+    border: none;
+    background-color: black;
+    width: 50%;
+}
+
+
+/* -------------(INICIO) CARACTERÍSTICAS------------- */
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caracteristicas h3 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+td img {
+    margin: 1rem;
+}
+
+
+/* ---------------SOBRE MI------------ */
+
+.main-about {
+    margin: 1rem;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-about img {
+    grid-area: 1 / 1 / 3 / 2;
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
+    margin-left: 1rem;
+}
+
+.main-about h1 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.main-about p {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.main-about h1 {
+    margin: 1rem;
+}
+
+.main-about p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* ---------------PORTFOLIO---------- */
+
+
+/* ---------------CONTACTO------------ */
+
+.main-contacto {
+    margin: 1rem;
+}
+
+.main-contacto h2 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.main-contacto p {
+    margin: 1rem;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #111111;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: #111111;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #282828;
+}
+
+.contacto {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* --------------FOOTER------------ */
+
+.contactame {
+    background-color: #111111;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactame h2 {
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.icon-button {
+    background-color: #282828;
+    border-radius: 3.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.0rem;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 3.6rem;
+}
+
+.icon-button:nth-child(2) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.icon-button:nth-child(3) {
+    margin-right: 2rem;
+}
+
+.icon-button span {
+    border-radius: 0;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 0;
+}
+
+.icon-button:hover span {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 3.6rem;
+    margin: -1.8rem;
+}
+
+.icon-button i {
+    background: none;
+    color: white;
+    height: 3.6rem;
+    left: 0;
+    line-height: 3.6rem;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 3.6rem;
+    z-index: 10;
+}
+
+.icon-button .icon-facebook {
+    color: #3B5998;
+}
+
+.icon-button:hover .icon-facebook {
+    color: white;
+}
+
+.facebook span {
+    background-color: #3B5998;
+}
+
+.instagram span {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.github span {
+    background-color: #111111;
+}
+
+.email span {
+    background-color: #EB2222;
+}
