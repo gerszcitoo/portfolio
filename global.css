@@ -248,7 +248,53 @@ td img {
 }
 
 
-/* ---------------PORTFOLIO---------- */
+/* --------------SERVICIOS------------- */
+
+.main-servicios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    height: 90vh;
+}
+
+.main-servicios h3 {
+    font-size: 1.5rem;
+}
+
+.main-servicios img {
+    height: 250px;
+    width: auto;
+}
+
+.img-container-1 {
+    width: 300px;
+    height: 300px;
+    background-image: url('src/img/virtualclass.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-container-2 {
+    width: 300px;
+    height: 300px;
+    background-image: url('src/img/webdesign.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-container-3 {
+    width: 300px;
+    height: 300px;
+    background-image: url('src/img/graphicdesign.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ---------------PORTFOLIO------------ */
 
 .main-portfolio h2 {
     margin: 1rem;
