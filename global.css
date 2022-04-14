@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+a {
+    color: black;
+}
+
 body {
     overflow: overlay;
 }
@@ -233,7 +237,7 @@ td img {
 }
 
 
-/* -------IFRAME DE MAPS----- */
+/* -IFRAME DE MAPS- */
 
 .maps-iframe {
     display: flex;
@@ -245,6 +249,32 @@ td img {
     position: absolute;
     height: 50%;
     width: 50%;
+}
+
+
+/* --INSPIRACIONES-- */
+
+.inspiraciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inspiraciones h4 {
+    font-size: 1.5rem;
+}
+
+.inspiraciones-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+.inspiraciones-item img {
+    margin: 1rem;
+    border-radius: 100%;
 }
 
 
