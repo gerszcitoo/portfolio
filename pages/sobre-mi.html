@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Germán Sánchez - Porfolio</title>
+    <title>Germán Sánchez - Sobre mí</title>
     <link rel="stylesheet" href="../global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 
@@ -13,20 +13,25 @@
 
 <body>
     <!-- ---------------NAVEGACIÓN-------------- -->
-    <nav class="primary-nav">
-        <ul id="navbar">
-            <li>
-                <a href="../index.html">
-                    <div class="nav-logo"><img src="https://www.dummyimage.com/50x50/000/fff" alt="logo"></div>
-                </a>
-            </li>
-            <li><a class="nav-item" href="../index.html">Inicio</a></li>
-            <li><a class="nav-item" href="sobre-mi.html">Sobre mí</a></li>
-            <li><a class="nav-item" href="servicios.html">Servicios</a></li>
-            <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav-item" href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <div class="nav-logo"><img src="https://www.dummyimage.com/50x50/000/fff" alt="logo"></div>
+        </a>
+        <!-- Menu Hamburguesa -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Navbar -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a class="nav-item" href="../index.html">Inicio</a></li>
+                <li><a class="nav-item" href="sobre-mi.html">Sobre mí</a></li>
+                <li><a class="nav-item" href="servicios.html">Servicios</a></li>
+                <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-item" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- -------------CONTACTO----------- -->
     <div class="main-about" id="about">
         <img src="../src/img/yo.jpg" alt="imagen placeholder">

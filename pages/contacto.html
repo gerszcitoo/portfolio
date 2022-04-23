@@ -14,20 +14,25 @@
 <body>
     <!-- ---------------NAVEGACIÓN-------------- -->
 
-    <nav class="primary-nav">
-        <ul id="navbar">
-            <li>
-                <a href="../index.html">
-                    <div class="nav-logo"><img src="https://www.dummyimage.com/50x50/000/fff" alt="logo"></div>
-                </a>
-            </li>
-            <li><a class="nav-item" href="../index.html">Inicio</a></li>
-            <li><a class="nav-item" href="sobre-mi.html">Sobre mí</a></li>
-            <li><a class="nav-item" href="servicios.html">Servicios</a></li>
-            <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav-item" href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <div class="nav-logo"><img src="https://www.dummyimage.com/50x50/000/fff" alt="logo"></div>
+        </a>
+        <!-- Menu Hamburguesa -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Navbar -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a class="nav-item" href="../index.html">Inicio</a></li>
+                <li><a class="nav-item" href="sobre-mi.html">Sobre mí</a></li>
+                <li><a class="nav-item" href="servicios.html">Servicios</a></li>
+                <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-item" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- ----------FORMULARIO---------- -->
     <div class="main-contacto">
         <h2>Contactame</h2>
