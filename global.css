@@ -312,23 +312,6 @@ hr {
 }
 
 
-/* -IFRAME DE MAPS- */
-
-.maps-iframe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px;
-}
-
-.maps-iframe iframe {
-    position: absolute;
-    height: 50%;
-    width: 50%;
-    z-index: 1;
-}
-
-
 /* --INSPIRACIONES-- */
 
 .inspiraciones {
