@@ -24,7 +24,7 @@
         <input class="side-menu" type="checkbox" id="side-menu" />
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
         <!-- Navbar -->
-        <nav class="nav">
+        <nav class="main-navbar">
             <ul class="menu">
                 <li><a class="nav-item" href="../index.html">Inicio</a></li>
                 <li><a class="nav-item" href="sobre-mi.html">Sobre mí</a></li>
@@ -36,34 +36,36 @@
     </header>
     <!-- -------------SOBRE MI----------- -->
     <div class="about-container">
-        <div class="about" id="about">
-            <img src="../src/img/yo.jpg" alt="Germán sánchez">
-            <h1>Germán Sánchez</h1>
-            <p>Desde muy chico me fascina el mundo de la tecnología, siempre quise dedicarme a algo relacionado, y ahora de a poco estoy lográndolo. <br> Como hobbie me gustan el diseño, y los videojuegos. Estudié en la Escuela Técnica N°24 del Distrito
-                Escolar 18, en la Ciudad Autónoma de Buenos Aíres, Argentina, en la especialidad de Técnico en Computación. Me egresé en 2021. <br> Actualmente estoy cursando la carrera de FullStack en CoderHouse
-            </p>
-            <!-- ----IFRAME---- -->
+        <div class="about row align-items-center justify-content-center">
+            <img src="../src/img/yo.jpg" alt="Germán Sánchez" class="col-sm-4">
+            <div class="col-sm-8">
+                <h1 class="row">Germán Sánchez</h1>
+                <p class="row">Desde muy chico me fascina el mundo de la tecnología, siempre quise dedicarme a algo relacionado, y ahora de a poco estoy lográndolo. <br> Como hobbie me gustan el diseño, y los videojuegos. Estudié en la Escuela Técnica N°24 del Distrito
+                    Escolar 18, en la Ciudad Autónoma de Buenos Aíres, Argentina, en la especialidad de Técnico en Computación. Me egresé en 2021. <br> Actualmente estoy cursando la carrera de FullStack en CoderHouse
+                </p>
+            </div>
         </div>
+        <!-- ----IFRAME---- -->
         <div class="maps-iframe">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12346.923672734833!2d-58.49234225605285!3d-34.62929513191823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc99546769e49%3A0x4d754ad5ca377710!2sFloresta%2C%20CABA!5e0!3m2!1ses!2sar!4v1649623393046!5m2!1ses!2sar"
                 frameborder="0" scrolling="no" onload="resizeIframe(this)" /></iframe>
 
         </div>
         <!-- ---------INSPIRACIONES------- -->
-        <div class="inspiraciones">
+        <div class="inspiraciones container">
             <h4>Personas que me insipiran</h4>
-            <div class="inspiraciones-container">
-                <div class="inspiraciones-item">
+            <div class="inspiraciones-container row">
+                <div class="inspiraciones-item col">
                     <img src="https://www.dummyimage.com/100x100/000/fff" alt="imagen placeholder">
                     <p><strong>Nombre Persona</strong></p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ad officiis sit similique aliquid sed quas dolor, ipsa, accusantium qui rerum placeat eum impedit distinctio fugiat earum, deserunt amet accusamus.</p>
                 </div>
-                <div class="inspiraciones-item">
+                <div class="inspiraciones-item col">
                     <img src="https://www.dummyimage.com/100x100/000/fff" alt="imagen placeholder">
                     <p><strong>Nombre Persona</strong></p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ad officiis sit similique aliquid sed quas dolor, ipsa, accusantium qui rerum placeat eum impedit distinctio fugiat earum, deserunt amet accusamus.</p>
                 </div>
-                <div class="inspiraciones-item">
+                <div class="inspiraciones-item col">
                     <img src="https://www.dummyimage.com/100x100/000/fff" alt="imagen placeholder">
                     <p><strong>Nombre Persona</strong></p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ad officiis sit similique aliquid sed quas dolor, ipsa, accusantium qui rerum placeat eum impedit distinctio fugiat earum, deserunt amet accusamus.</p>
@@ -89,7 +91,7 @@
         </div>
     </footer>
     <!-- -----------SCRIPTS----------- -->
-    <!-- IFRAME SCRIPT -->
+    <!-- IFRAME RESPONSIVE SCRIPT -->
     <script>
         function resizeIframe(obj) {
             obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
