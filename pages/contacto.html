@@ -41,7 +41,7 @@
         <h2>Contactame</h2>
         <p>Rellena el formulario debajo y presiona "Enviar".</p>
         <div class="form-contacto">
-            <form action="">
+            <!-- <form action="">
                 <label for="nombre">Nombre y Apellido</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido...">
                 <label for="email">Email</label>
@@ -49,9 +49,25 @@
                 <label for="asunto">Mensaje</label>
                 <textarea id="asunto" name="asunto" placeholder="Tu mensaje..." style="height:100px"></textarea>
                 <input type="submit" value="Enviar">
+            </form> -->
+            <form>
+                <div class="mb-3">
+                    <label for="form-name" class="form-label">Nombre y Apellido</label>
+                    <input type="message" class="form-control" id="form-name">
+                </div>
+                <div class="mb-3">
+                    <label for="form-email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="form-email" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="form-msj">Mensaje</label>
+                    <textarea class="form-control" placeholder="Tu mensaje..." id="form-msj" style="height: 100px"></textarea>
+                </div>
+                <button type="submit" class="contact-btn">Enviar</button>
             </form>
         </div>
     </div>
+
     <!-- -------------FOOTER------------ -->
     <footer>
         <div class="contactame">

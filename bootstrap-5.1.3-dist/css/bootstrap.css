@@ -299,6 +299,8 @@ button,
 [type=reset],
 [type=submit] {
     -webkit-appearance: button;
+    background-color: #111111;
+    color: white;
 }
 
 button:not(:disabled),
@@ -314,7 +316,7 @@ button:not(:disabled),
 }
 
 textarea {
-    resize: vertical;
+    resize: none;
 }
 
 fieldset {
@@ -1973,9 +1975,8 @@ progress {
 .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #86b7fe;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
+    outline: 0 none;
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -2212,9 +2213,8 @@ textarea.form-control-lg {
 }
 
 .form-select:focus {
-    border-color: #86b7fe;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
+    outline: 0 none;
 }
 
 .form-select[multiple],
@@ -2290,9 +2290,9 @@ textarea.form-control-lg {
 }
 
 .form-check-input:focus {
-    border-color: #86b7fe;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    border-color: black;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
+    outline: 0 none;
 }
 
 .form-check-input:checked {
@@ -2892,8 +2892,8 @@ textarea.form-control.is-invalid {
 
 .btn-check:focus+.btn,
 .btn:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
+    outline: 0 none;
 }
 
 .btn:disabled,
@@ -4744,7 +4744,7 @@ fieldset:disabled .btn {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
+    border-radius: .75rem;
 }
 
 .card>hr {
@@ -4776,6 +4776,9 @@ fieldset:disabled .btn {
 
 .card-body {
     flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem 1rem;
 }
 
