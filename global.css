@@ -264,11 +264,12 @@ hr {
 
 .card {
     border-radius: 50px;
-    transition: all .2s;
+    transition: transform .2s, box-shadow .2s;
     margin-top: 1rem;
 }
 
 .card:hover {
+    border: none;
     transform: translate(0, -20px);
     box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 75%);
     -webkit-box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 75%);
@@ -357,8 +358,8 @@ hr {
     margin: 1rem;
 }
 
-.item-servicios img {
-    width: 80%;
+.servicios-img img {
+    border-radius: 0 0 .75rem .75rem;
 }
 
 
@@ -636,9 +637,6 @@ hr {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-    }
-    .item-servicios {
-        width: 30%;
     }
     /* ---------PORTFOLIO-------- */
     .portfolio-container {
