@@ -199,6 +199,7 @@ img {
     font-weight: 400;
     border-radius: 20px;
     text-align: center;
+    transition: .2s;
 }
 
 .more:hover {
@@ -373,11 +374,10 @@ hr {
 
 .main-portfolio {
     margin: 1rem;
-}
-
-.portfolio-container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -639,25 +639,6 @@ hr {
         align-items: center;
     }
     /* ---------PORTFOLIO-------- */
-    .portfolio-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
-    }
-    .img1 {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-    .img2 {
-        grid-area: 1 / 2 / 2 / 3;
-    }
-    .img3 {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-    .img4 {
-        grid-area: 2 / 2 / 3 / 3;
-    }
     .grid-btn {
         background: rgba(0, 0, 0, 0.9);
     }
