@@ -269,6 +269,10 @@ hr {
     margin-top: 1rem;
 }
 
+.card img {
+    border-radius: 50px 50px 0 0;
+}
+
 .card:hover {
     border: none;
     transform: translate(0, -20px);
