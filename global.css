@@ -349,22 +349,21 @@ hr {
 
 /* --------------SERVICIOS------------- */
 
+.servicios {
+    min-height: 90vh;
+}
+
 .main-servicios {
     display: grid;
     justify-items: center;
     text-align: center;
     margin: 2rem;
-    min-height: 90vh;
     animation: slide-in .5s;
 }
 
 .main-servicios h3 {
     font-size: 1.5rem;
     margin: 1rem;
-}
-
-.servicios-img img {
-    border-radius: 0 0 .75rem .75rem;
 }
 
 
@@ -639,8 +638,12 @@ hr {
     .main-servicios {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        gap: 8rem;
+    }
+    .servicios {
+        display: flex;
         align-items: center;
+        justify-content: space-evenly;
     }
     /* ---------PORTFOLIO-------- */
     .grid-btn {
