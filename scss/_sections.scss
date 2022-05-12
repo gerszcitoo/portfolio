@@ -1,0 +1,235 @@
+// ----------INICIO----------
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.more {
+    background: #333232;
+    padding: 10px 20vw;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 20px;
+    text-align: center;
+    transition: .2s;
+    &:hover {
+        background: black;
+        color: white;
+    }
+}
+
+.about {
+    text-align: center;
+    animation: slide-in .5s;
+    img {
+        border-radius: 100%;
+        width: 15rem;
+        height: auto;
+        max-width: 90%;
+        margin: 1rem;
+    }
+    p {
+        margin: 1rem;
+    }
+}
+
+hr {
+    margin: auto;
+    display: flex;
+    height: 2px;
+    border: none;
+    background-color: black;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.caracteristicas {
+    text-align: center;
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+.main-caracteristicas {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+.card {
+    border-radius: 50px;
+    transition: transform .2s, box-shadow .2s;
+    margin-top: 1rem;
+    img {
+        border-radius: 50px 50px 0 0;
+    }
+    &:hover {
+        border: none;
+        transform: translate(0, -20px);
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.75);
+    }
+}
+
+// ----------SOBRE-MI----------
+.main-about {
+    margin: 1rem;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    align-items: center;
+    img {
+        grid-area: 1 / 1 / 3 / 2;
+        border-radius: 100%;
+        width: 15rem;
+        height: 15rem;
+        margin-left: 1rem;
+    }
+    h1 {
+        grid-area: 1 / 2 / 2 / 3;
+        margin: 1rem;
+    }
+    p {
+        grid-area: 2 / 2 / 3 / 3;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.inspiraciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+.inspiraciones-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    img {
+        margin: 1rem;
+        border-radius: 100%;
+    }
+}
+
+// ----------SERVICIOS----------
+.servicios {
+    min-height: 90vh;
+}
+
+.main-servicios {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin: 2rem;
+    animation: slide-in .5s;
+    p {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+}
+
+// ----------PORTFOLIO----------
+.main-portfolio {
+    h2 {
+        margin: 1rem;
+        font-size: 2rem;
+        animation: slide-in .5s;
+    }
+    margin: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin: 1rem;
+    &:hover {
+        .grid-btn {
+            opacity: 1;
+        }
+    }
+    >img {
+        object-fit: contain;
+        width: 100%;
+        max-height: 100%;
+    }
+}
+
+.grid-btn {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-title-mobile {
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.element-title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 200;
+    display: none;
+}
+
+// -----------CONTACTO---------
+.main-contacto {
+    margin: 1rem;
+    h2 {
+        font-size: 2rem;
+        margin: 1rem;
+        animation: slide-in .5s;
+    }
+    p {
+        margin: 1rem;
+    }
+}
+
+.contact-btn {
+    background-color: #111111;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+        background-color: #282828;
+    }
+}
+
+.form-contacto {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 2rem;
+}

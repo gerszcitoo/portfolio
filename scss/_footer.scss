@@ -1,0 +1,113 @@
+.contactame {
+    background-color: #111111;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+        font-size: 1.5rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+    }
+}
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.icon-button {
+    background-color: #282828;
+    border-radius: 3.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.0rem;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 3.6rem;
+    span {
+        border-radius: 0;
+        display: block;
+        height: 0;
+        left: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 0;
+    }
+    &:hover {
+        span {
+            width: 3.6rem;
+            height: 3.6rem;
+            border-radius: 3.6rem;
+            margin: -1.8rem;
+        }
+        .icon-facebook {
+            color: white;
+        }
+    }
+    i {
+        background: none;
+        color: white;
+        height: 3.6rem;
+        left: 0;
+        line-height: 3.6rem;
+        position: absolute;
+        top: 0;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 3.6rem;
+        z-index: 10;
+    }
+    .icon-facebook {
+        color: #3B5998;
+    }
+}
+
+.facebook {
+    span {
+        background-color: #3B5998;
+    }
+}
+
+.instagram {
+    span {
+        background: #f09433;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+}
+
+.github {
+    span {
+        background-color: #111111;
+    }
+}
+
+.email {
+    span {
+        background-color: #EB2222;
+    }
+}
