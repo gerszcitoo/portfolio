@@ -1,9 +1,22 @@
-// ----------INICIO----------
-.about-container {
+@mixin center {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+// MAPA
+$sections: (caracteristicas: 1rem, about: 1rem, servicios: 1rem, portfolio: 1rem, contacto: 1rem);
+@each $section,
+$margin in $sections {
+    .main-#{$section} {
+        margin: $margin;
+    }
+}
+
+// ----------INICIO----------
+.about-container {
+    @include center;
+    flex-direction: column;
     margin-top: 1rem;
 }
 
@@ -59,7 +72,6 @@ hr {
     display: grid;
     justify-items: center;
     text-align: center;
-    margin: 1rem;
 }
 
 .card {
@@ -80,7 +92,6 @@ hr {
 
 // ----------SOBRE-MI----------
 .main-about {
-    margin: 1rem;
     display: grid;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -136,7 +147,6 @@ hr {
     display: grid;
     justify-items: center;
     text-align: center;
-    margin: 2rem;
     animation: slide-in .5s;
     p {
         font-size: 1.5rem;
@@ -151,19 +161,14 @@ hr {
         font-size: 2rem;
         animation: slide-in .5s;
     }
-    margin: 1rem;
+    @include center;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .grid-element {
-    display: flex;
+    @include center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
     text-align: center;
     margin: 1rem;
@@ -180,15 +185,13 @@ hr {
 }
 
 .grid-btn {
+    @include center;
     position: absolute;
     object-fit: cover;
     height: 100%;
     width: 100%;
     opacity: 0;
     transition: .2s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .element-title-mobile {
@@ -205,7 +208,6 @@ hr {
 
 // -----------CONTACTO---------
 .main-contacto {
-    margin: 1rem;
     h2 {
         font-size: 2rem;
         margin: 1rem;
@@ -217,7 +219,7 @@ hr {
 }
 
 .contact-btn {
-    background-color: #111111;
+    background-color: $main-color;
     color: white;
     padding: 12px 20px;
     border: none;

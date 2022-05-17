@@ -88,11 +88,26 @@
       transform: rotate(45deg);
       top: 0; }
 
+.main-caracteristicas {
+  margin: 1rem; }
+
+.main-about {
+  margin: 1rem; }
+
+.main-servicios {
+  margin: 1rem; }
+
+.main-portfolio {
+  margin: 1rem; }
+
+.main-contacto {
+  margin: 1rem; }
+
 .about-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 1rem; }
 
 .more {
@@ -138,8 +153,7 @@ hr {
 .main-caracteristicas {
   display: grid;
   justify-items: center;
-  text-align: center;
-  margin: 1rem; }
+  text-align: center; }
 
 .card {
   border-radius: 50px;
@@ -155,7 +169,6 @@ hr {
     -moz-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.75); }
 
 .main-about {
-  margin: 1rem;
   display: grid;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -201,19 +214,17 @@ hr {
   display: grid;
   justify-items: center;
   text-align: center;
-  margin: 2rem;
   animation: slide-in .5s; }
   .main-servicios p {
     font-size: 1.5rem;
     margin: 1rem; }
 
 .main-portfolio {
-  margin: 1rem;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
+  min-height: 100vh;
+  flex-direction: column; }
   .main-portfolio h2 {
     margin: 1rem;
     font-size: 2rem;
@@ -221,9 +232,9 @@ hr {
 
 .grid-element {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: relative;
   text-align: center;
   margin: 1rem; }
@@ -235,15 +246,15 @@ hr {
     max-height: 100%; }
 
 .grid-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   object-fit: cover;
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .2s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  transition: .2s ease; }
 
 .element-title-mobile {
   font-weight: 700;
@@ -255,14 +266,13 @@ hr {
   font-weight: 200;
   display: none; }
 
-.main-contacto {
+.main-contacto h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  animation: slide-in .5s; }
+
+.main-contacto p {
   margin: 1rem; }
-  .main-contacto h2 {
-    font-size: 2rem;
-    margin: 1rem;
-    animation: slide-in .5s; }
-  .main-contacto p {
-    margin: 1rem; }
 
 .contact-btn {
   background-color: #111111;
@@ -336,8 +346,6 @@ hr {
     height: 3.6rem;
     border-radius: 3.6rem;
     margin: -1.8rem; }
-  .icon-button:hover .icon-facebook {
-    color: white; }
   .icon-button i {
     background: none;
     color: white;
@@ -352,23 +360,20 @@ hr {
     transition: all 0.3s;
     width: 3.6rem;
     z-index: 10; }
-  .icon-button .icon-facebook {
-    color: #3B5998; }
-
-.facebook span {
-  background-color: #3B5998; }
 
 .instagram span {
-  background: #f09433;
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+  background-color: #f09433; }
 
 .github span {
   background-color: #111111; }
 
 .email span {
-  background-color: #EB2222; }
+  background-color: #eb2222; }
+
+.instagram span {
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
 
 @media (min-width: 768px) {
   .header {
