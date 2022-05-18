@@ -124,8 +124,7 @@
     color: white; }
 
 .about {
-  text-align: center;
-  animation: slide-in .5s; }
+  text-align: center; }
   .about img {
     border-radius: 100%;
     width: 15rem;
@@ -206,8 +205,7 @@ hr {
 .main-servicios {
   display: grid;
   justify-items: center;
-  text-align: center;
-  animation: slide-in .5s; }
+  text-align: center; }
   .main-servicios p {
     font-size: 1.5rem;
     margin: 1rem; }
@@ -220,8 +218,7 @@ hr {
   flex-direction: column; }
   .main-portfolio h2 {
     margin: 1rem;
-    font-size: 2rem;
-    animation: slide-in .5s; }
+    font-size: 2rem; }
 
 .grid-element {
   display: flex;
@@ -261,8 +258,7 @@ hr {
 
 .main-contacto h2 {
   font-size: 2rem;
-  margin: 1rem;
-  animation: slide-in .5s; }
+  margin: 1rem; }
 
 .main-contacto p {
   margin: 1rem; }
@@ -419,40 +415,81 @@ hr {
   .element-title {
     display: block; } }
 
-@-webkit-keyframes slide-in {
+@-webkit-keyframes slide-in-right {
   0% {
     opacity: 0;
     transform: translateX(100%); }
   100% {
     transform: translateX(0%); } }
 
-@-moz-keyframes slide-in {
+@-moz-keyframes slide-in-right {
   0% {
     opacity: 0;
     transform: translateX(100%); }
   100% {
     transform: translateX(0%); } }
 
-@-ms-keyframes slide-in {
+@-ms-keyframes slide-in-right {
   0% {
     opacity: 0;
     transform: translateX(100%); }
   100% {
     transform: translateX(0%); } }
 
-@-o-keyframes slide-in {
+@-o-keyframes slide-in-right {
   0% {
     opacity: 0;
     transform: translateX(100%); }
   100% {
     transform: translateX(0%); } }
 
-@keyframes slide-in {
+@keyframes slide-in-right {
   0% {
     opacity: 0;
     transform: translateX(100%); }
   100% {
     transform: translateX(0%); } }
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0%); } }
+
+@-moz-keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0%); } }
+
+@-ms-keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0%); } }
+
+@-o-keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0%); } }
+
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0%); } }
+
+.slide-in-right {
+  animation: slide-in-right .5s; }
+
+.slide-in-left {
+  animation: slide-in-left .5s; }
 
 * {
   font-family: 'Arvo', sans-serif;

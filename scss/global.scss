@@ -6,20 +6,20 @@ $main-color: #111111;
 @import "footer";
 @import "media";
 // -------ESTILO GENERAL-------
-@mixin keyframes($slide-in) {
-    @-webkit-keyframes #{$slide-in} {
+@mixin keyframes($slide-in-right) {
+    @-webkit-keyframes #{$slide-in-right} {
         @content;
     }
-    @-moz-keyframes #{$slide-in} {
+    @-moz-keyframes #{$slide-in-right} {
         @content;
     }
-    @-ms-keyframes #{$slide-in} {
+    @-ms-keyframes #{$slide-in-right} {
         @content;
     }
-    @-o-keyframes #{$slide-in} {
+    @-o-keyframes #{$slide-in-right} {
         @content;
     }
-    @keyframes #{$slide-in} {
+    @keyframes #{$slide-in-right} {
         @content;
     }
 }
@@ -32,7 +32,7 @@ $main-color: #111111;
     animation: #{$str};
 }
 
-@include keyframes(slide-in) {
+@include keyframes(slide-in-right) {
     0% {
         opacity: 0;
         transform: translateX(100%);
@@ -40,6 +40,50 @@ $main-color: #111111;
     100% {
         transform: translateX(0%);
     }
+}
+
+@mixin keyframes($slide-in-left) {
+    @-webkit-keyframes #{$slide-in-left} {
+        @content;
+    }
+    @-moz-keyframes #{$slide-in-left} {
+        @content;
+    }
+    @-ms-keyframes #{$slide-in-left} {
+        @content;
+    }
+    @-o-keyframes #{$slide-in-left} {
+        @content;
+    }
+    @keyframes #{$slide-in-left} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
+@include keyframes(slide-in-left) {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.slide-in-right {
+    animation: slide-in-right .5s;
+}
+
+.slide-in-left {
+    animation: slide-in-left .5s;
 }
 
 * {

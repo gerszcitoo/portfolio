@@ -1,1 +1,1 @@
-Últimos cambios: Agregados keywords, descripción, favicon, incorporado mixin, extend y maps en sections.scss
+Últimos cambios: Agregados keywords, descripción, favicon, incorporado mixin, extend y maps en sections.scss, animaciones modificadas
