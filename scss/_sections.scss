@@ -127,15 +127,8 @@ hr {
 }
 
 .inspiraciones-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    @extend .inspiraciones;
     margin: 1rem;
-    img {
-        margin: 1rem;
-        border-radius: 100%;
-    }
 }
 
 // ----------SERVICIOS----------
