@@ -37,7 +37,6 @@ $margin in $sections {
 
 .about {
     text-align: center;
-    // animation: slide-in-right .5s;
     img {
         border-radius: 100%;
         width: 15rem;
@@ -140,7 +139,6 @@ hr {
     display: grid;
     justify-items: center;
     text-align: center;
-    // animation: slide-in-right .5s;
     p {
         font-size: 1.5rem;
         margin: 1rem;
@@ -152,7 +150,6 @@ hr {
     h2 {
         margin: 1rem;
         font-size: 2rem;
-        // animation: slide-in-right .5s;
     }
     @include center;
     min-height: 100vh;
@@ -204,7 +201,6 @@ hr {
     h2 {
         font-size: 2rem;
         margin: 1rem;
-        // animation: slide-in-right .5s;
     }
     p {
         margin: 1rem;
