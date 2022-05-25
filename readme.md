@@ -1,1 +1,2 @@
 Últimos cambios: Agregados keywords, descripción, favicon, incorporado mixin, extend y maps en sections.scss, animaciones modificadas
+21/05: Se le agregó un alt a todas las imágenes y se redujo el peso de las mismas
