@@ -498,6 +498,14 @@ hr {
   scroll-behavior: smooth;
   box-sizing: border-box; }
 
+::-moz-selection {
+  color: white;
+  background: #578bde; }
+
+::selection {
+  color: white;
+  background: #578bde; }
+
 a {
   color: black; }
 

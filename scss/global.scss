@@ -6,6 +6,7 @@ $main-color: #111111;
 @import "footer";
 @import "media";
 // -------ESTILO GENERAL-------
+// ----------KEYFRAMES---------
 @mixin keyframes($slide-in-right) {
     @-webkit-keyframes #{$slide-in-right} {
         @content;
@@ -86,6 +87,7 @@ $main-color: #111111;
     animation: slide-in-left .5s;
 }
 
+// -------ESTILO GLOBAL---------
 * {
     font-family: 'Arvo', sans-serif;
     margin: 0;
@@ -93,6 +95,16 @@ $main-color: #111111;
     text-decoration: none;
     scroll-behavior: smooth;
     box-sizing: border-box;
+}
+
+::-moz-selection {
+    color: white;
+    background: #578bde;
+}
+
+ ::selection {
+    color: white;
+    background: #578bde;
 }
 
 a {
