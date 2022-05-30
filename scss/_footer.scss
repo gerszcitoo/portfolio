@@ -79,20 +79,12 @@
     }
 }
 
-$redes: (instagram: #f09433, github: $main-color, email: #eb2222);
+$redes: (linkedin: #0077b5, github: $main-color, email: #eb2222);
 @each $red,
 $color in $redes {
     .#{$red} {
         span {
             background-color: #{$color};
         }
-    }
-}
-
-.instagram {
-    span {
-        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-        background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     }
 }
