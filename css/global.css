@@ -261,15 +261,15 @@ hr {
   font-weight: 200;
   display: none; }
 
-.main-contacto h2 {
-  font-size: 2rem;
-  margin: 1rem; }
-
-.main-contacto p {
-  margin: 1rem; }
-
-.main-contacto sub {
-  font-size: .7rem; }
+.main-contacto {
+  min-height: 90vh; }
+  .main-contacto h2 {
+    font-size: 2rem;
+    margin: 1rem; }
+  .main-contacto p {
+    margin: 1rem; }
+  .main-contacto sub {
+    font-size: .7rem; }
 
 .contact-btn {
   background-color: #111111;
