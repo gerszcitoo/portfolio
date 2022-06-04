@@ -249,7 +249,9 @@ hr {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .2s ease; }
+  transition: .2s ease;
+  display: flex;
+  flex-direction: column; }
 
 .element-title-mobile {
   font-weight: 700;
@@ -259,6 +261,9 @@ hr {
   font-size: 1.5rem;
   color: white;
   font-weight: 200;
+  display: none; }
+
+.visit-element {
   display: none; }
 
 .main-contacto {
@@ -416,7 +421,12 @@ hr {
   .element-title-mobile {
     display: none; }
   .element-title {
-    display: block; } }
+    display: block;
+    margin: auto; }
+  .visit-element {
+    display: block;
+    margin-bottom: 2rem;
+    color: white; } }
 
 @-webkit-keyframes slide-in-right {
   0% {

@@ -188,6 +188,8 @@ hr {
     width: 100%;
     opacity: 0;
     transition: .2s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .element-title-mobile {
@@ -199,6 +201,10 @@ hr {
     font-size: 1.5rem;
     color: white;
     font-weight: 200;
+    display: none;
+}
+
+.visit-element {
     display: none;
 }
 
